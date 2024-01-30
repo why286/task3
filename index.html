@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>My Bio and Tech Journey</title>
+</head>
+<body>
+  <header>
+    <h1>My Bio and Tech Journey</h1>
+  </header>
+  <section class="bio-section">
+    <h2>Bio:</h2>
+    <div class="bio-content">
+      <img src="../task3/Assets/images/IMG_20220402_184609_672.jpg" alt="Profile Picture">
+
+        
+       <p style="text-align: justify;">Nnoli Armstrong Chinwendu is a dynamic professional blending expertise in accounting with emerging skills in backend software development and database management. With a foundation in accounting and a passion for technology, Armstrong has seamlessly transitioned into the realm of software development while leveraging his data management acumen to drive impactful results.
+        
+        As a seasoned accountant, Armstrong's journey began at First Bank of Nigeria Ltd, where he honed his financial acumen and operational efficiency. Leveraging his innate curiosity for technology, he embarked on a career pivot, delving into the intricacies of data operations at Enugu Electricity Distribution Company (EEDC).
+        
+        Driven by a desire to expand his horizons, Armstrong embraced the role of Data Operations Officer, meticulously overseeing data integrity and alignment. Recognizing the synergy between his accounting background and software development aspirations, he pursued opportunities to bridge the gap between financial management and technological innovation.
+        
+        Embracing his role as a backend software developer, Armstrong has demonstrated a keen aptitude for crafting scalable solutions and optimizing operational workflows. His proficiency in data science serves as a valuable asset, complementing his software development endeavors and enriching his approach to problem-solving.
+        
+        Proudly embodying the roles of software developer, accountant, and data operations officer, Armstrong is committed to continuous growth and innovation. With a relentless pursuit of excellence and a dedication to mastering new technologies, he remains poised to make enduring contributions to the intersection of finance and technology.
+        
+        </p>
+
+    </div>
+  </section>
+  <section class="journey-section">
+    <h2>Tech Journey:</h2>
+    <p>The training experience so far has been incredibly enriching. I've had the privilege to delve deep into both theoretical concepts and practical applications across a spectrum of technologies. The hands-on approach and interactive sessions have accelerated my learning curve, allowing me to grasp complex topics more effectively. I've also appreciated the collaborative environment, where ideas are shared freely, fostering innovation and growth among peers.</p>
+  </section>
+  <section class="form-section">
+    <h2>Form:</h2>
+    <form action="/submit" method="post" enctype="multipart/form-data">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="track">Track:</label>
+      <select id="track" name="track">
+        <option value="frontend">Frontend</option>
+        <option value="backend">Backend</option>
+      </select><br><br>
+
+      <label for="file">Upload File:</label>
+      <input type="file" id="file" name="file"><br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br><br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+</body>
+</html>
