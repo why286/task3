@@ -3,7 +3,8 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
+  background-color: #9db086;
+  opacity: 2;
 }
 
 header {
@@ -14,12 +15,14 @@ header {
 }
 
 .bio-section {
-  padding: 20px;
+    padding: 40px;
+    margin: 10px 10px 10px 10px;
   text-align: center;
 }
 
 .bio-content {
-  display: flex;
+    display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: start;
 }
@@ -30,6 +33,7 @@ header {
   border-radius: 100px;
 }
 
+
 .bio-content p {
   font-size: larger;
   font-weight: 300;
@@ -37,10 +41,41 @@ header {
   margin-left: 20px; /* Add margin to separate text from image */
 }
 
-.journey-section,
-.form-section {
+.container {
+  width: 80%;
+  margin: 20px auto;
   background-color: #fff;
   padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.form-section {
+    padding: 20px;
   margin-top: 20px;
   text-align: center; /* Center-align text in these sections */
 }
@@ -58,20 +93,9 @@ label {
   display: block;
   margin-bottom: 10px;
 }
-
-input[type="text"],
-input[type="email"],
-input[type="password"],
-select {
+input{
+  flex: 1;
   width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-input[type="file"] {
-  margin-bottom: 15px;
 }
 
 input[type="submit"] {
